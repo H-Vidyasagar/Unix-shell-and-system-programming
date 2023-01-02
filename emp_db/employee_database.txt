@@ -1,0 +1,12 @@
+Employee Database
+3564|Sudhir Agarwal|Execution |Personnel |6/7/1987|7500
+2355|J.b.saxena |G.M.|marketing |12/3/45|8000
+1110|v.k.Agarwal|G.M.|marketing|31/12/1980|9000
+2233|a.k.Shukla|g.m.|Sales|12/12/1952|6000
+9876|jai Agarwal|director|production|12/8/50|7000
+3564|Sudhir Agarwal|executive |personnel |7/6/47|7500
+1867|g.r.Agrawal|g.m.|marketing|12/11/50|9000
+2476|anil Aggarwal|manager|personnel|22/10/1987|8500
+9876|Jai sharma|directr|prodcn|3/12/50|7000
+1876|Rohit Kumar|G.M.|Sales|13/1/1970|7500
+This is the footer
