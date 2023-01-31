@@ -1,0 +1,68 @@
+/* Q1) Shell script for area of circle
+   Q2) Shell script to copy a file from one directory to another
+   Q3) Execute cmp,sort,comm and diff commands*/
+A1)
+#!/bin/bash
+echo "CIRCLE AREA & CIRCUMFERENCE"
+
+echo "\nEnter the radius of a circle : "
+read r
+d=$(echo "scale=2;2 * $r"|bc) #Diameter
+
+area=$(echo "scale=2; 22/7 * ($r * $r)" | bc)
+
+circumference=$(echo "scale=2; 22/7 * $d"| bc)
+
+echo "\nArea of circle is : $area"
+echo "\nCircumference of circle is : $circumference \n"
+
+A2)
+#!/bin/bash
+echo "Enter the name of the file to be moved\c"
+read file_1
+echo "Enter the directory"
+read directory_1
+mkdir $directory_1
+cp $file_1 $directory_1
+
+A3)
+cat flower1
+Rose
+Daisy
+Marigold
+Lily
+Daffodil
+
+cat flower2 
+Rose
+Jasmine
+Hibiscus
+Lily 
+Daisy
+
+
+cmp flower1 flower2
+OUTPUT:
+flower1 flower2 differ:byte 6, line 2
+
+sort -o newflower1 flower1
+sort -o newflower2 flower2
+
+comm new flower1 newflower2
+OUTPUT:
+Daffodil
+                      Daisy
+          Hibiscus
+          Jasmine
+Marigold              Lily
+                      Rose
+                      
+diff newflower1 newflower2
+OUTPUT:
+1do
+<Daffodil
+2a2,3
+>Hibiscus
+>Jasmine
+4d4
+<Marigold
